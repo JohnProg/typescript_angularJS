@@ -1,0 +1,58 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/john/.nvm/v4.4.0/bin/node',
+1 verbose cli   '/home/john/.nvm/v4.4.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'tsd',
+1 verbose cli   '-g' ]
+2 info using npm@2.14.20
+3 info using node@v4.4.0
+4 verbose install initial load of /home/john/.nvm/v4.4.0/lib/package.json
+5 verbose readDependencies loading dependencies from /home/john/.nvm/v4.4.0/lib/package.json
+6 silly cache add args [ 'tsd', null ]
+7 verbose cache add spec tsd
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'tsd',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'tsd',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed tsd@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for tsd
+11 info addNameTag [ 'tsd', 'latest' ]
+12 silly mapToRegistry name tsd
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry http://ads-npm.advertising.aol.com:4873/
+15 silly mapToRegistry uri http://ads-npm.advertising.aol.com:4873/tsd
+16 verbose addNameTag registry:http://ads-npm.advertising.aol.com:4873/tsd not in flight; fetching
+17 verbose request uri http://ads-npm.advertising.aol.com:4873/tsd
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 7:13:47 PM
+20 verbose request id cc5c239a427be5b9
+21 http request GET http://ads-npm.advertising.aol.com:4873/tsd
+22 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 172.20.193.236:4873
+23 info attempt registry request try #2 at 7:16:11 PM
+24 http request GET http://ads-npm.advertising.aol.com:4873/tsd
+25 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 172.29.43.23:4873
+26 info attempt registry request try #3 at 7:19:23 PM
+27 http request GET http://ads-npm.advertising.aol.com:4873/tsd
+28 verbose stack Error: connect ETIMEDOUT 172.29.43.23:4873
+28 verbose stack     at Object.exports._errnoException (util.js:870:11)
+28 verbose stack     at exports._exceptionWithHostPort (util.js:893:20)
+28 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1057:14)
+29 verbose cwd /home/john/Documents/typescript/demo1
+30 error Linux 3.19.0-51-generic
+31 error argv "/home/john/.nvm/v4.4.0/bin/node" "/home/john/.nvm/v4.4.0/bin/npm" "install" "tsd" "-g"
+32 error node v4.4.0
+33 error npm  v2.14.20
+34 error code ETIMEDOUT
+35 error errno ETIMEDOUT
+36 error syscall connect
+37 error network connect ETIMEDOUT 172.29.43.23:4873
+37 error network This is most likely not a problem with npm itself
+37 error network and is related to network connectivity.
+37 error network In most cases you are behind a proxy or have bad network settings.
+37 error network
+37 error network If you are behind a proxy, please make sure that the
+37 error network 'proxy' config is set properly.  See: 'npm help config'
+38 verbose exit [ 1, true ]
